@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hand Gesture Control</h1>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+        </div>
+        <div class="info">
+            <p>Use the following gestures: move your hand back and forth for better results</p>
+            <ul>
+                <li><strong>Right Hand Thumb Up</strong>: Increase Volume</li>
+                <li><strong>Right Hand Middle Finger Up</strong>: Decrease Volume</li>
+                <li><strong>Right Hand Index & Middle Fingers Up</strong>: Take Screenshot</li>
+                <li><strong>Left Hand All Fingers Up (Palm Open)</strong>: Press Spacebar</li>
+            </ul>
+            <p>Press 'q' in the video window to quit.</p>
+        </div>
+    </div>
+</body>
+</html>
